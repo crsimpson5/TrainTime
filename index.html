@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Train Time</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Train Times</h1>
+      <p class="lead"></p>
+    </div>
+
+    <div class="card">
+      <h5 class="card-header">Trian Schedule</h5>
+      <div class="card-body">
+        <table class="table" id="schedule-table" aria-autocomplete="off">
+          <thead>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency (min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <h5 class="card-header">Featured</h5>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label>Train Name</label>
+            <input type="text" class="form-control" id="name-input">
+          </div>
+          <div class="form-group">
+            <label>Destination</label>
+            <input type="text" class="form-control" id="dest-input">
+          </div>
+          <div class="form-group">
+            <label>First Trian Time (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="time-input">
+          </div>
+          <div class="form-group">
+            <label>Frequency (min)</label>
+            <input type="text" class="form-control" id="freq-input">
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/javascript/logic.js"></script>
+
+</body>
+
+</html>
