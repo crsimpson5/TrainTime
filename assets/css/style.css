@@ -1,0 +1,7 @@
+#trash-can {
+  padding: 4px;
+}
+
+#trash-can:hover {
+  cursor: pointer;
+}
